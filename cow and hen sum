@@ -1,0 +1,12 @@
+#to find the number of cow and hen live togeather by given inputs leg and head 
+leg=12
+head=6
+decision=False
+for cow in range (head+1):
+    hen=head-cow
+    if(cow*4+hen*2==leg):
+        print(cow)
+        print(hen)
+        decision=True
+if(decision==False):
+    print("no solution")
