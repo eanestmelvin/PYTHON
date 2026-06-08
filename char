@@ -1,0 +1,14 @@
+up = 0
+low = 0
+char = ""
+while True:
+    char = input("Enter a character: ")
+    if char in "aeiouAEIOU":
+        break
+    if char.isupper():
+        up=up+1
+    elif char.islower():
+        low=low+1
+
+print("upper =", up)
+print("lower =", low)
