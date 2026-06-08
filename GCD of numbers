@@ -1,0 +1,10 @@
+a = 60
+b = 25
+
+while b != 0:
+    re = a % b
+    temp = b
+    b = re
+    a = temp
+
+print(a)
