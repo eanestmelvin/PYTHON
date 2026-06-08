@@ -1,0 +1,19 @@
+n=4
+sum=0
+while(n!=0):
+    s=34
+    c=0
+    p=0
+
+    n=int(input("enter the marks="))
+    sum=sum+n
+    s=(input("enter the subject="))
+    if (n<40):
+        c=c+1
+        print("failed in and with=",s,n-40)
+    if(n<40):
+        print("got passed in and with=",s,n)
+        p=p+1
+print("num of sub pass=",p)
+print("num of sub failed=",c)
+print("total num of marks scored=",sum)
