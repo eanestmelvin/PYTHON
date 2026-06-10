@@ -1,0 +1,11 @@
+a=["gopi","rose","kiruba","saru","madhu"]
+b=[40,30,60,50,90]
+c=0
+p=0
+for i in range (len(a)):
+    if (b[i]>40):
+        c=c+1
+        print("{}.{} scored {}%".format(c,a[i],b[i]))
+    else:
+        p=p+1
+        print("{}.{} is failed with {}".format(p,a[i],b[i]))
