@@ -1,0 +1,6 @@
+a=["gopi","rose","kiruba","saru","madhu"]
+age=[40,30,60,50,90]
+c=list(zip(age,a))
+d=sorted(c,reverse=True)
+for i in range(len(d)):
+    print("{}.{} his age is {}".format(i+1,d[i][1],d[i][0]))
