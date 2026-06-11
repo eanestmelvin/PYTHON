@@ -1,0 +1,17 @@
+def ccc(x,y):
+    return gcd(x,y)==1
+    
+def gcd(x,y):
+    while(y!=0):
+        res=x%y
+        temp=y
+        y=res
+        x=temp
+    return x
+            
+n=int(input("Enter the number"))
+for a in range (5,n):
+    for b in range (4,a):
+        for c in range(3,b):
+            if (c*c+b*b==a*a) and ccc(a,b) and ccc(a,c) and ccc(b,c):
+                print("yatho oru number paa",a,b,c)
