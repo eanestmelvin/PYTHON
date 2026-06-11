@@ -1,0 +1,30 @@
+class IT:
+    dep="IT"
+    def direct(self,a,b,c,d):
+        self.a=a
+        self.b=b
+        self.c=c
+        self.d=d
+    def display(self):
+        print("from {} {} scored {} avg of 300".format(IT.dep,self.d,(self.a+self.b+self.c)//3))
+class CS:
+    dep="cs"
+    def direct(self,a,b,c,d):
+        self.a=a
+        self.b=b
+        self.c=c
+        self.d=d
+    def display(self):
+        print("from {} {} scored {} avg of 300".format(CS.dep,self.d,(self.a+self.b+self.c)//3))
+s1=IT()
+s2=IT()
+c1=CS()
+c2=CS()
+s1.direct(23,30,50,"kiruba")
+s2.direct(23,50,50,"pavi")
+c1.direct(23,30,90,"nagul")
+c2.direct(70,90,50,"vikash")
+s1.display()
+s2.display()
+c1.display()
+c2.display()
