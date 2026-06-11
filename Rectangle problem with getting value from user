@@ -1,0 +1,15 @@
+class rect:
+    def __init__ (self):
+        x=int(input("enter a number"))
+        y=int(input("enter the second number"))
+        self.a=x
+        self.b=y
+    def display(self):
+        return self.a*self.b
+n=int(input("enter the number of rectangles "))
+l=[]
+for i in range (n):
+    R=rect()
+    l.append(R)
+for i in l:
+    print("Area",i.display())
