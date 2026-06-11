@@ -1,0 +1,11 @@
+class sum1:
+    def addi(self):
+        x=int(input("enter a number A"))
+        y=int(input("enter a number B"))
+        self.a=x
+        self.b=y
+    def display(self):
+        print("the sum of A and B is ",self.a+self.b)
+a=sum1()
+a.addi()
+a.display()
