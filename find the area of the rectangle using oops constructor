@@ -1,0 +1,11 @@
+class rect:
+    def __init__ (self,l,b):
+        self.a=l
+        self.b=b
+    def display(self):
+        return self.a*self.b
+
+r2=rect(300,600)
+r1=rect(30,40)
+print("the area of rectangle is ",r1.display())
+print("the area of rectangle is ",r2.display())
