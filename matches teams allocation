@@ -1,0 +1,14 @@
+n=int(input ("enter the number of matches"))
+teams=[]
+for i in range (n):
+    country=input("enter the names of the country")
+    teams.append(country)
+inc=1
+matches=[]
+for i in range (n-1):
+    for j in range(i+1,n):
+        mathes.append([teams[i],teams[j]])
+ 
+for i in matches:
+    print("{}.{} vs {}".format(inc,i[0],i[1]))
+    inc=inc+1
