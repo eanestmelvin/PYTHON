@@ -1,0 +1,8 @@
+d={'a':1,'b':10,'c':100,'d':1000}
+s="abcbc"
+sum=0
+for i in s:
+    if i in d.keys():
+        sum=sum+d[i]
+print(sum)
+print(d['d'])
