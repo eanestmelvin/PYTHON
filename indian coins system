@@ -1,0 +1,6 @@
+n=int(input("enter the num "))
+coin=[500,200,100,50,20,10,5,2,1]
+for i in range (len(coin)):
+    while(coin[i]<=n):
+        print (coin[i],end=" ")
+        n=n-coin[i]
