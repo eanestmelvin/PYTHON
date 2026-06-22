@@ -1,0 +1,11 @@
+words=["Raju", "Ram", "Anu"]
+vowels="aeiouAEIOU"
+result=[]
+for i in words:
+    c=0
+    for ch in word:
+        if ch in vowels:
+            c=c+1
+    result.append(c)
+
+print(result)
