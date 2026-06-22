@@ -1,0 +1,18 @@
+a = 40
+x, y = 0, 1
+for i in range(a):
+    print(x,end=" ")
+    x, y = y, x + y
+#two approches
+print()
+def ap(i):
+    if i==0:
+        return 0
+    if i==1:
+        return 1
+    else:
+        return ap(i-2)+ap(i-1)
+def abc(n):
+    for i in range (n):
+        print(ap(i),end=" ")
+abc(40)
