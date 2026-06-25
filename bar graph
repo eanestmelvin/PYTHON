@@ -1,0 +1,9 @@
+import numpy as np
+import matplotlib.pyplot as plt
+b = np.array([1, 2, 3, 4, 5])
+c = np.arange(1, 6)
+plt.bar(b, c, color="green")
+plt.xlabel("X deepika")
+plt.ylabel("Y Values")
+plt.title("Bar Chart")
+plt.show()
