@@ -1,0 +1,14 @@
+names=["eanest","raja","bava"]
+gender=['M','M','F']
+male=[]
+female=[]
+for i in range(len(names)):
+    if gender[i] in 'M':
+        male.append(names[i])
+    else:
+        female.append(names[i])
+c=1
+for i in range(len(male)):
+    for j in range(len(female)):
+        print("{} {} and {}".format(c,male[i],female[j]))
+        c=c+1
