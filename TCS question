@@ -1,0 +1,12 @@
+n=20
+l=[]
+while True:
+    if n in l and n!=0:
+        print("Not Round")
+        break
+    if n==1:
+        print("round")
+        break
+    l.append(n)
+    n=sum([int(i)*int(i) for i in str(n)])
+print(l)
