@@ -1,0 +1,13 @@
+class Solution:
+    def coinChange(self, coins: List[int], amount: int) -> int:
+        b = sorted(coins)
+        c = 0
+        while len(b) != 0:
+            a = b.pop()
+            if amount % a == 0:
+                c = c + (amount // a)
+                return c
+            else:
+                c = c + (amount // a)
+                amount = amount % a
+        return -1
